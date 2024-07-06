@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="main">
+        <div id="nav">
+            <div id="ch1"></div>
+            <div id="ch2">
+                <ul>
+                    <li class="nav-item"><a href="">Careers</a></li>
+                    <li class="nav-item"><a href="">About</a></li>
+                    <li class="nav-item"><a href="">Contact</a></li>
+                    <li class="nav-item"><a href="">Services</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="hov">
+            <div id="gif"></div>
+            <div id="info">
+                <div id="car">
+                    <ul id="u1">
+                        <li id="l1"><a id="a1" href="">Job Categories</a></li><br>
+                        <li id="l1"><a id="a1" href="">Message</a></li><br>
+                        <li id="l1"><a id="a1" href="">People</a></li><br>
+                        <li id="l1"><a id="a1" href="">Work Environment</a></li><br>
+                    </ul>
+                </div>
+
+                <div id="car">
+                    <ul id="u1">
+                        <li id="l1"><a id="a1" href="">Mission</a></li><br>
+                        <li id="l1"><a id="a1" href="">Vission</a></li><br>
+                        <li id="l1"><a id="a1" href="">Values</a></li><br>
+                        <li id="l1"><a id="a1" href="">team Members</a></li><br>
+                    </ul>
+                </div>
+
+                <div id="car">
+                    <ul id="u1">
+                        <li id="l1"><a id="a1" href="">Our email</a></li><br>
+                        <li id="l1"><a id="a1" href="">location</a></li><br>
+                        <li id="l1"><a id="a1" href="">Our Phonenumber</a></li><br>
+                        <li id="l1"><a id="a1" href="">Our Policy</a></li><br>
+                    </ul>
+                </div>  
+
+                <div id="cars">
+                    <ul id="u1">
+                        <li id="l1"><a id="a1" href="">Doctor For Home</a></li><br>
+                        <li id="l1"><a id="a1" href="">Our Online Platform</a></li><br>
+                        <li id="l1"><a id="a1" href="">Nurses</a></li><br>
+                        <li id="l1"><a id="a1" href="">Home Checkup </a></li><br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <div id="main2">
+            <div id="tm">
+                <div id="linear"></div>
+                <div id="txt">
+                    <marquee behavior="scroll" direction="left" scrollamount="20"><h1>Hospital Management System</h1></marquee>
+                </div>
+            </div>
+            <div id="con">
+                <h2 class="transition">Our Concept</h2><br>
+                <h3 class="transition">Online Service From Home <br>Provide Good Impression</h3>
+            </div>
+        </div>
+    
+    </div>
+</body>
+
+<script>
+    const navItems = document.querySelectorAll('.nav-item');
+    const hov = document.getElementById('hov');
+
+    navItems.forEach(item => {
+        item.addEventListener('mouseover', () => {
+            hov.style.display = 'flex';
+        });
+
+        item.addEventListener('mouseout', () => {
+            hov.style.display = 'none';
+        });
+    });
+
+    let toggle = false;
+
+    setInterval(() => {
+        document.querySelectorAll(".transition").forEach(element => {
+            element.style.opacity = 0;
+            element.style.transform = "translateX(100%)";
+        });
+
+        setTimeout(() => {
+            if (toggle) {
+                document.querySelector("h2").innerHTML = "Our Concept";
+                document.querySelector("h3").innerHTML = "Online Service From Home <br>Provide Good Impression";
+            } else {
+                document.querySelector("h2").innerHTML = "Our Vision";
+                document.querySelector("h3").innerHTML = "Easy To Use and Interact <br> Provide Online Platform";
+            }
+            toggle = !toggle;
+
+            document.querySelectorAll(".transition").forEach(element => {
+                element.style.opacity = 1;
+                element.style.transform = "translateX(0)";
+            });
+        }, 1000); // Wait for half of the transition duration to change the text
+    }, 3500);
+</script>
+
+</html>

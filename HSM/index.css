@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+}
+
+#nav {
+    width: 100%;
+    height: 120px;
+    display: flex;
+}
+
+#ch1 {
+    width: 20%;
+    height: 120px;
+    background: url(./logos.png) no-repeat center;
+    background-size: 150px;
+}
+
+#ch2 {
+    width: 80%;
+    height: 120px;
+    display: flex;
+}
+
+ul {
+    display: flex;
+    gap: 90px;
+    font-size: 19px;
+}
+
+li {
+    margin: 60px;
+    color: white;
+}
+
+#l1 {
+    margin: 0;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#u1 {
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#hov {
+    width: 90%;
+    height: 35vh;
+    margin-left: 5%;
+    border: 2px solid white;
+    position: absolute;
+    background-color: white;
+    border-radius: 20px;
+    z-index: 2;
+    display: flex;
+    display: none;
+    transition: 1s ease-in-out;
+}
+
+#main2 {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#gif {
+    width: 16%;
+    height: 200px;
+    margin-left: 20px;
+    margin-top: 10px;
+    background: url(./hos.gif) no-repeat;
+}
+
+#info {
+    width: 80%;
+    height: 35vh;
+    margin-left: 20px;
+    display: flex;
+    gap: 70px;
+}
+
+#car {
+    width: 20%;
+    height: 34vh;
+    border-right: 4px solid whitesmoke;
+}
+
+#linear {
+    width: 30%;
+    height: 50vh;
+    z-index: 1;
+    position: absolute;
+    top: 1vh;
+    background: linear-gradient(90deg, #667eea 0%, rgba(247, 0, 0, 0.007) 100%);
+}
+
+#txt {
+    width: 100%;
+    height: 50vh;
+    z-index: 0;
+    font-size: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 4vh;
+    overflow: hidden;
+    opacity: 0.9;
+}
+
+h1 {
+    color: lightgray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    white-space: nowrap;
+}
+
+#tm {
+    width: 100%;
+    height: 350px;
+    display: flex;
+}
+
+#con {
+    width: 20%;
+    height: 150px;
+    margin-left: 60px;
+    opacity: 0.7;
+}
+
+h2 {
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+h3 {
+    color: rgb(236, 226, 207);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.transition {
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#a1 {
+    color: black;
+}
